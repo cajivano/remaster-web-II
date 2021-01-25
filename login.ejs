@@ -1,0 +1,90 @@
+<!-- Nombre   : login.ejs
+Autor         : Camila Jimena Vargas Noriega
+Asignatura    : Ingeniería y Desarrollo en la Web
+Práctica      : Implementación de una solución basada en una aplicación web II
+Docente       : Octavio Aguirre Lozano-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>REMASTER</title>
+    
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">
+        <img src="/img/LOGO-REMASTER.png" width="290" height="50" alt="" loading="lazy">
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="/registro">REGISTRO</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/login">LOGIN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="/regalos" tabindex="-1" aria-disabled="true">Proximamente</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- contenedor login-->
+<div class="container mt-5">
+    <div class="row">
+  
+  <h3><i class="fas fa-project-diagram"></i> L O G I N: </h3>
+      
+      <div class="col-md-6">
+  
+      
+      <a><i class="fas fa-edit"></i> Ingrese sus datos para ingresar: </a>
+        <div class="card-body">
+          
+          <form action="/auth/signIn" method="post">
+            <div class="form-group">
+              <input type="text" name="correo" placeholder="insertar correo electronico" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" name="password" placeholder="insertar contraseña" class="form-control">
+            </div>
+            
+             
+  
+            <button type="submit" class="btn btn-primary btn-block">
+              Ingresar 
+            </button>
+            <button type="reset" class="btn btn-primary btn-block">
+              Limpiar campos
+            </button>
+            
+          </form>
+        </div>
+      
+    </div>
+  </div>
+
+
+
+</body>
+<footer class="page-footer  font-small ">
+
+  
+  <div class="footer-copyright text-center py-5">© 2020 Copyright:
+    <a> R E M A S T E R</a>
+  </div>
+
+
+</footer>
+</html>
+
+
